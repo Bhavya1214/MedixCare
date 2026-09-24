@@ -1,0 +1,21 @@
+# Build output
+target/
+*.class
+
+# Never commit real credentials
+src/main/resources/config.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
