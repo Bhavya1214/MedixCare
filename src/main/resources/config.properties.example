@@ -1,0 +1,14 @@
+# Copy this file to "config.properties" (same folder) and fill in real values.
+# config.properties is git-ignored, so your credentials never get committed.
+#
+# Any value left blank/missing falls back to the matching environment variable
+# (MEDIXCARE_DB_USER, MEDIXCARE_DB_PASSWORD, MEDIXCARE_GUI_DB_URL, MEDIXCARE_CLI_DB_URL),
+# and finally to a built-in default. See DatabaseConfig.java for the exact order.
+
+db.user=root
+db.password=
+
+# The GUI app (com.medixcare.gui.MedixCare) and the CLI app (com.medixcare.cli.MedixCareSystem)
+# were originally written against two different schemas, so they get separate URLs.
+gui.db.url=jdbc:mysql://localhost:3306/HMS
+cli.db.url=jdbc:mysql://localhost:3306/MedixCare
